@@ -1,0 +1,67 @@
+/* liScroll styles */
+
+.tickercontainer { /* the outer div with the black border */
+	width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+    background: #fff;
+    
+}
+/* that serves as a mask. so you get a sort of padding both left and right */
+.tickercontainer .mask { 
+	position: relative;
+	width: 100%;
+	overflow: hidden;padding-left: 110px;height: 30px;
+}
+ul.newsticker { /* that's your list */
+position: relative;
+list-style-type: none;
+margin: 0;
+padding: 0;
+
+}
+/* important: display inline gives incorrect results when you check for elem's width */
+ul.newsticker li {
+	float: left; 
+	margin: 3px;
+	padding: 0; 
+}
+ul.newsticker li a{font-weight:bold;font-size: 13px;}
+ul.er-controls{
+list-style: none;
+    display: inline-block;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #001b8a;
+	margin:0
+}
+ul.er-controls > li{
+    display: inline-block;
+    padding: 0;
+    background: #001b8a;
+    margin: 0;
+    border-radius: 0;
+    width: 22px;
+    height: 30px;
+    border-right: solid 1px #fff;
+ 
+}
+ul.er-controls  li.fa:before{color: #fff;
+    line-height: 29px;}
+ul.er-controls > li:hover{
+	background: #3e3e3e;
+	cursor: pointer;font-size: 16px;
+}
+.scroll_title{
+background: #001b8a;
+    position: absolute;
+    padding: 4px 10px;
+    top: 0;
+    color: #fff;
+    font-weight: bold;
+}

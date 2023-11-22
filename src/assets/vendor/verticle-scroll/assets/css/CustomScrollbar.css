@@ -1,0 +1,69 @@
+
+.vertical-scroll .liststyles {
+    max-width: 100%;
+    margin: auto;
+    margin: 0;
+    padding: 0;    min-height: 325px !important;
+}
+
+.vertical-scroll .liststyles-container {
+	text-align: center;
+}
+
+.vertical-scroll .liststyles-container i {
+	font-size: 36px;
+	margin: 8px;
+	cursor: pointer;
+	-webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+}
+
+.vertical-scroll .liststyles-container i:hover {
+	color: #333;
+}
+
+.vertical-scroll .liststyles li {
+    color: #4e4e4e;
+    background: #F2F2F2;
+    overflow: hidden;
+    /* height: 60px; */
+    padding: 10px;
+    line-height: 20px;
+    text-align: left;
+    border-bottom: 1px dotted #2c8162;
+    font-size: 15px;
+}
+.vertical-scroll{    position: relative;}
+.vertical-scroll .wd-list {
+    max-height: 263px;
+    overflow: hidden;}
+.vertical-scroll .controllers   {
+    font-size: 16px;
+    cursor: pointer;
+    position: absolute;
+    background: #363636;
+    padding: 5px 8px;
+    border: solid 1px #8f9296;
+    color: #ffffff;
+}
+.vertical-scroll .controllers.fa-angle-double-up{right: 2px;
+    top: -54px;}
+.vertical-scroll .controllers.fa-angle-double-down{    right: 29px;
+    top: -54px;}
+
+.vertical-scroll .liststyles li:hover {
+	background: #FFF;
+}
+.vertical-scroll .controllers   {
+ 
+    cursor: pointer;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+     
+}

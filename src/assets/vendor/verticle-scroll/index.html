@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>JQuery Advanced News Ticker | risq</title>
+ 
+    <link href="assets/css/main.css" rel="stylesheet">
+ 
+   
+    
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+					<div class="vertical-scroll">
+						<i class="fa fa-arrow-up controllers" id="nt-example1-prev"></i>
+		                <ul id="nt-example1">
+		                    <li>Etiam imperdiet volutpat libero eu tristique. Aenean, rutrum felis in. <a href="#">Read more...</a></li>
+		                    <li>Curabitur porttitor ante eget hendrerit adipiscing. Maecenas at magna. <a href="#">Read more...</a></li>
+		                    <li>Praesent ornare nisl lorem, ut condimentum lectus gravida ut. <a href="#">Read more...</a></li>
+		                    <li>Nunc ultrices tortor eu massa placerat posuere. Vivamus viverra sagittis. <a href="#">Read more...</a></li>
+		                    <li>Morbi sodales tellus sit amet leo congue bibendum. Ut non mauris eu neque. <a href="#">Read more...</a></li>
+		                    <li>In pharetra suscipit orci sed viverra. Praesent at sollicitudin tortor, id. <a href="#">Read more...</a> </li>
+		                    <li>Maecenas nec ligula sed est suscipit aliquet sed eget ipsum, suspendisse. <a href="#">Read more...</a></li>
+		                    <li>Onec bibendum consectetur diam, nec euismod urna venenatis eget.. <a href="#">Read more...</a> </li>
+		                </ul>
+		                <i class="fa fa-arrow-down controllers" id="nt-example1-next"></i>
+					</div>	
+	
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+   
+    <script src="assets/js/jquery.newsTicker.js"></script>
+    <script>
+		var nt_example1 = $('#nt-example1').newsTicker({
+                row_height: 80,
+                max_rows: 3,
+                duration: 4000,
+                prevButton: $('#nt-example1-prev'),
+                nextButton: $('#nt-example1-next')
+            });
+            $('#nt-example3-button').click(function(){
+            	if (state == 'stopped') {
+	            	state = 'turning';
+	            	speed = 1;
+	            	add = 1;
+	            	$('#nt-example3').newsTicker('updateOption', "duration", 0);
+	            	$('#nt-example3').newsTicker('updateOption', "speed", speed);
+	            	nt_example3.newsTicker('start');
+	            	$(this).text("STOP");
+	            }
+	            else if (state == 'turning') {
+	            	state = 'stopping';
+	            	$(this).text("WAITING...");
+	            }
+            });
+        </script>
+  </body>
+</html>
